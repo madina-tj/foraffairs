@@ -29,7 +29,57 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$criteria = new CDbCriteria;
+		$criteria->order = "create_time desc";
+		$criteria->limit = 3;
+		$news = News::model()->findAll($criteria);
+
+
+		$this->render('index', array('news' => $news));
+	}
+
+
+	public function actionAbout()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('about');
+	}
+	public function actionUndergraduate()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('undergraduate');
+	}
+	public function actionGraduate()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('graduate');
+	}
+	public function actionAcademstaff()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('academ-staff');
+	}
+	public function actionAlumni()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('alumni');
+	}
+	public function actionStaff()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('staff');
+	}
+	public function actionFaq()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('faq');
 	}
 
 	/**

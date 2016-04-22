@@ -1,14 +1,44 @@
 <?php
-/* @var $this SiteController */
-/* @var $model ContactForm */
-/* @var $form CActiveForm */
-
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
-$this->breadcrumbs=array(
-	'Contact',
-);
+$this->pageTitle=Yii::app()->name . ' - Contacts';
 ?>
+	<head>
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
+		
+	</head>
+<style>
+			#map {
+		        width: 500px;
+		        height: 400px;
+		        background-color: #CCC;
+		        position: absolute;
+		    }
 
+		</style>
+
+<script>
+	function initialize()
+	{
+	  var mapProp = {
+	    center: new google.maps.LatLng(43.207736,76.668434),
+	    zoom:7,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP
+	  };
+	  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+
+	function loadScript()
+	{
+	  var script = document.createElement("script");
+	  script.type = "text/javascript";
+	  script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+	  document.body.appendChild(script);
+	}
+
+	window.onload = loadScript;
+</script>
+
+<body>
+</br></br>
 <h1>Contact Us</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
@@ -74,12 +104,22 @@ If you have business inquiries or other questions, please fill out the following
 	</div>
 	<?php endif; ?>
 
+
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Submit'); ?>
 	</div>
+
+ 	<div id="googleMap" style="width:400px;height:400px;"></div>
+
+
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
 
 <?php endif; ?>
+
+
+
+</body>
