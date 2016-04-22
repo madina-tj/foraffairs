@@ -40,10 +40,6 @@
 		  </div>
 		</div>
 		</div>
-			
-		
-
-
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -150,8 +146,6 @@
 		)); ?>
 	</div><!-- mainmenu -->
 
-
-
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
@@ -160,10 +154,6 @@
 
 	<?php echo $content; ?>
 
-	
-
-
-	
 
 </div><!-- page -->
 

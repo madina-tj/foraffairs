@@ -4991,3 +4991,63 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/css/bootstrap.css.map
 ---
+2016/04/23 01:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kajsdlksjad".' in /private/var/project/www/framework-1.1.16/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/project/www/framework-1.1.16/web/CWebApplication.php(141): CWebApplication->runController('kajsdlksjad')
+#1 /private/var/project/www/framework-1.1.16/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /private/var/project/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kajsdlksjad
+HTTP_REFERER=http://test.local/
+---
+2016/04/23 01:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdas/dasdas/dasd".' in /private/var/project/www/framework-1.1.16/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/project/www/framework-1.1.16/web/CWebApplication.php(141): CWebApplication->runController('asdas/dasdas/da...')
+#1 /private/var/project/www/framework-1.1.16/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /private/var/project/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/asdas/dasdas/dasd
+HTTP_REFERER=http://test.local/
+---
+2016/04/23 01:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css.map".' in /private/var/project/www/framework-1.1.16/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/project/www/framework-1.1.16/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /private/var/project/www/framework-1.1.16/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /private/var/project/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2016/04/23 01:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in /private/var/project/www/framework-1.1.16/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/project/www/framework-1.1.16/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 /private/var/project/www/framework-1.1.16/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /private/var/project/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2016/04/23 01:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kajsdlksjad".' in /private/var/project/www/framework-1.1.16/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/project/www/framework-1.1.16/web/CWebApplication.php(141): CWebApplication->runController('kajsdlksjad')
+#1 /private/var/project/www/framework-1.1.16/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /private/var/project/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kajsdlksjad
+HTTP_REFERER=http://test.local/
+---
+2016/04/23 01:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdas/dasdas/dasd".' in /private/var/project/www/framework-1.1.16/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/project/www/framework-1.1.16/web/CWebApplication.php(141): CWebApplication->runController('asdas/dasdas/da...')
+#1 /private/var/project/www/framework-1.1.16/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /private/var/project/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/asdas/dasdas/dasd
+HTTP_REFERER=http://test.local/
+---
+2016/04/23 01:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in /private/var/project/www/framework-1.1.16/web/CWebApplication.php:286
+Stack trace:
+#0 /private/var/project/www/framework-1.1.16/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 /private/var/project/www/framework-1.1.16/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /private/var/project/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
