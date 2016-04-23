@@ -5,7 +5,6 @@ class NewsController extends Controller
 
 	public function actionIndex()
 	{
-
 		$dataProvider=new CActiveDataProvider('News', array(
 		    'criteria'=>array(
 		        // 'condition'=>'status=1',
@@ -21,6 +20,7 @@ class NewsController extends Controller
 		    ),
 		));
 
+		$this->menuActive = 'news';
 		$this->render('index', array('dataProvider'=> $dataProvider));
 	}
 	public function actionView($urlkey)

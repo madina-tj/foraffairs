@@ -34,7 +34,7 @@ class SiteController extends Controller
 		$criteria->limit = 3;
 		$news = News::model()->findAll($criteria);
 
-
+		$this->menuActive = 'home';
 		$this->render('index', array('news' => $news));
 	}
 

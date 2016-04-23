@@ -62,6 +62,7 @@ class News extends CActiveRecord
 			'text' => 'Text',
 			'img_path' => 'Img Path',
 			'url_path' => 'Url Path',
+			'create_time' => 'Create Time',
 		);
 	}
 
@@ -88,6 +89,7 @@ class News extends CActiveRecord
 		$criteria->compare('text',$this->text,true);
 		$criteria->compare('img_path',$this->img_path,true);
 		$criteria->compare('url_path',$this->url_path,true);
+		$criteria->compare('create_time',$this->create_time,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -6,8 +6,8 @@ $this->breadcrumbs=array(
 );
 
 ?>
-<h1>Admin page</h1>
+<h2>Admin page</h2>
 
-<p>
-	This is Admin page
-</p>
+<p><a href="admin/news">Manage News page</a></p>
+<p><a href="admin/programs">Manage Programs page</a></p>
+<p><a href="admin/people">Manage People page</a></p>

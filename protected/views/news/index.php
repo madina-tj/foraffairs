@@ -1,18 +1,20 @@
-<?php
-/* @var $this NewsController */
-/* @var $dataProvider CActiveDataProvider */
+<div class="container">
+	<?php
+	/* @var $this NewsController */
+	/* @var $dataProvider CActiveDataProvider */
 
-$this->breadcrumbs=array(
-	'News',
-);
+	$this->breadcrumbs=array(
+		'News',
+	);
 
-?>
+	?>
 
-<h1>News</h1>
+	<h1>News</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-	'pager' => array(
-    )
-)); ?>
+	<?php $this->widget('zii.widgets.CListView', array(
+		'dataProvider'=>$dataProvider,
+		'itemView'=>'_view',
+		'pager' => array(
+	    )
+	)); ?>
+</div>

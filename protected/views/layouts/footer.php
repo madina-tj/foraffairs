@@ -1,5 +1,5 @@
-<div id="footer">
-    <table id="footer-table">
+<div class="footer">
+    <table class="footer__table">
       <tr>
         <td>
           <div id="littleMenu">
@@ -33,5 +33,5 @@
       </tr>
 
     </table>
-    <p style="position:absolute; color:white; margin-left:540px; font-family: 'Exo 2', 'Open Sans'; float:left;">@2016. Suleyman Demirel University. All rights reserved.</p>
+    <p class="footer__copyright">@2016. Suleyman Demirel University. All rights reserved.</p>
 </div>
